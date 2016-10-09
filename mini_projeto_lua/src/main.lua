@@ -1,18 +1,26 @@
+require("controller")
+require("persistence")
+
+
+
+ 
 function main()
-
-local Guest = require("entities.Guest");
-
-print("Digite o nome:");
-strname = io.read();
-
-print("Digite o cpf");
-strcpf = io.read();
-
-g = Guest.new{name=strname, cpf=strcpf}
-
-print(g.name)
-print(g.cpf)
+local list = {}
+list = open("io.txt")
 
 
+--add(list,{"Matheus", "1231"})
+ 
+--read(list)
+update(list, "bb")
+
+
+--save(list,"io.txt")
+ 
+--open(fileName)->list
+--delete(list, cpf)
+--add(list,row)
+--read(list)
+--save(list,fileName)
 end
 main()
